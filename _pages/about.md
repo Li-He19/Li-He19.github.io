@@ -1,56 +1,95 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+<!-- # About Me -->
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+Hello! My name is **Li He**, and I am a Master’s student in **Computer Science** at the **University of Victoria**.
 
-A data-driven personal website
+My research interests include **machine learning**, **distributed systems**, and **computer networks**.  
+I enjoy working on projects that connect *AI* with large-scale system design, such as analyzing and optimizing traffic patterns in distributed deep learning.
+
+Before my graduate studies, I completed coursework and projects in **algorithms**, **optimization for machine learning**, and **computer communication networks**, earning top grades in all courses.
+
+Beyond academics, I am actively seeking opportunities to apply my skills in real-world projects and collaborations.  
+
+<!-- 👉 Check out my [projects](projects.md) and [CV](cv.pdf) for more details. -->
+
+
+Work Experience
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+**Software Developer (Part-time)**  
+Pigeon Communication Limited, Victoria, BC, Canada  
+*2020 – 2021*  
+- Programmed and deployed C-based firmware for Arduino Uno microcontrollers to control experimental hardware.  
+- Configured and operated UAVs for field experiments, contributing to data collection and system validation.  
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+**Postal Clerk**  
+Canada Post, Victoria, BC, Canada  
+*2021 – 2024*  
+- Processed and sorted high-volume mail and packages in a time-sensitive, team-based environment.  
+- Ensured accuracy and efficiency while supporting daily operations under tight deadlines.  
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
-
-Getting started
+Selected Project Experience
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+1. **Traffic Pattern Analysis and Comparison of Distributed Deep Learning Models**  
+   *Technologies: PyTorch (DistributedDataParallel), ASTRA-sim, Slurm, NVIDIA DGX-2, Google TPU*  
+   - Architected and executed distributed training experiments for models like VGG16 and GPT-3 on Canada’s Alliance HPC clusters, achieving 91% model accuracy with minimal communication overhead.  
+   - Utilized ASTRA-sim to model and analyze training performance across various network topologies, identifying fully connected layers as the primary communication bottleneck.  
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+2. **Large-Scale Text Embeddings & Clustering Using Metadata and Pinecone Embeddings**  
+   *Technologies: Python, Pinecone, Sentence Transformers, Scikit-learn (PCA, K-Means), KeyBERT*  
+   - Built a semantic search pipeline by generating high-dimensional embeddings from a large text corpus using Sentence Transformers and the Pinecone vector database.  
+   - Implemented PCA for dimensionality reduction and leveraged KeyBERT for automated keyword extraction to enrich metadata.  
+   - Deployed K-Means clustering to group related documents, significantly improving search result relevance and speed for text-based applications.  
 
-**Markdown generator**
+3. **Analysis of RED Algorithm Using Markov Chain Model**  
+   *Technologies: Python, NumPy, Matplotlib, Computer Networking, Performance Modeling, Markov Chains*  
+   - Developed a Markov Chain model to simulate and analyze the queueing behavior of the Random Early Detection (RED) congestion control algorithm.  
+   - Conducted a comparative performance analysis of Linear vs. Exponential RED, visualizing the results with Matplotlib.  
+   - Demonstrated that Exponential RED achieves significantly higher throughput and lower packet latency under simulated network congestion.  
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+4. **Analysis and Prediction of Maternal Health Risk**  
+   *Technologies: Python, Scikit-learn (SGD, Random Forest), TensorFlow, Pandas*  
+   - Engineered and compared multiple machine learning models to classify maternal health risk levels based on physiological data.  
+   - Validated the performance of SGD, Random Forest, and Neural Network classifiers to identify the most effective model for early risk detection.
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
 
-Example: editing a Markdown file for a talk
+Research Publications
+======
+- **[J1]** J. Wei, B. Yang, **L. He**, et al., “Design and optimization of low power cabinet lock circuit based on NB-IOT communication,” *Electronic Design Engineering*, 2019, 27(19): 19-24.
+
+- **[C1]** W. Yang, **L. He**, J. Pan, L. Cai, and W. Tang, “StreamMoE: Dual-Stream Pipelining for Accelerated Distributed MoE Training.” [submitted to IEEE INFOCOM’26]
+
+- **[O1]** W. Yang, **L. He**, L. Cai, A. Sepahi, and J. Pan, “Tile scheduling across multiple paths for smooth interactive 360-degree video streaming.” [to be submitted]
+
+
+Honors and Awards
+======
+
+- **2025**: Bronze Medal of the 2024 China International Innovation Competition, standing out among more than 11,000 research teams worldwide.  
+- **2018–2019**: First Prize Scholarship awarded by HNNU to students ranking in the Top 3 in their department based on GPA.  
+- **2016**: Outstanding Graduate awarded by HNUST in recognition of outstanding academic record and promising future.  
+- **2015**: Outstanding Student awarded by HNUST for demonstrated leadership and dedicated volunteering service.  
+- **2014**: Second Prize in Energy Conservation and Emission Reduction Competition awarded by HNUST to students with a novel idea or product beneficial for the environment.
+
+
+Technical Skill
+======
+
+- **Programming Languages:** Python, C, MATLAB, SQL, HTML, CSS, Visual Basic  
+- **Frameworks & Libraries:** Scikit-learn, Pandas, NumPy, Matplotlib, TensorFlow/Keras  
+- **Tools & Platforms:** Anaconda, Visual Studio, Git & GitHub, Google Colab, Overleaf, Arduino, IAR Embedded Workbench  
+- **Databases:** MySQL, Pinecone  
+- **Knowledge:** Machine Learning, Data Mining, Computer Networking, Communication Principles, Optimization Algorithms
+
+<!-- Example: editing a Markdown file for a talk
 ![Editing a Markdown file for a talk](/images/editing-talk.png)
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
