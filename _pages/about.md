@@ -9,7 +9,7 @@ redirect_from:
 
 <!-- # About Me -->
 
-Hello! My name is **Li He**, and I am a Master’s student in **Computer Science** at the **University of Victoria**.
+Hello! My name is **Li He**, and I am a Master’s student in **Computer Science** at the **University of Victoria** with [Prof. Jianping Pan](https://webhome.cs.uvic.ca/~pan/).
 
 My research interests include **machine learning**, **distributed systems**, and **computer networks**.  
 I enjoy working on projects that connect *AI* with large-scale system design, such as analyzing and optimizing traffic patterns in distributed deep learning.
